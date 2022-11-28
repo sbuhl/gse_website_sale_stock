@@ -15,6 +15,9 @@
     ],
     'data': [
     ],
+    'demo': [
+        'data/demo.xml',
+    ],
     'assets': {
         'web.assets_frontend': [
             'gse_website_sale_stock/static/src/js/variant_mixin.js',
