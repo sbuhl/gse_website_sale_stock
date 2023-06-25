@@ -11,15 +11,18 @@
 
     # any module necessary for this one to work correctly
     'depends': [
+        'website_crm_partner_assign',  # res_partner.grade_id
         'website_sale_stock',
     ],
     'data': [
+        'views/product_pricelist_views.xml',
     ],
     'demo': [
         'data/demo.xml',
     ],
     'assets': {
         'web.assets_frontend': [
+            'gse_website_sale_stock/static/src/js/max_amount_toaster.js',
             'gse_website_sale_stock/static/src/js/variant_mixin.js',
         ],
     },
