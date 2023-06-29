@@ -24,8 +24,7 @@
                         <div class="flex-grow-1">
                             <span><b t-esc="wh.name"/></span><br />
                             <p><strong><t t-esc="wh.free_qty"/> </strong>Units left in stock.</p>
-                            <i class="fa fa-circle mr-1" style="color:red;"/>Something to show here<br/>
-                            <i class="fa fa-map-marker mr-1" style="color:orange;"/>Like the address maybe?
+                            <i class="fa fa-map-marker mr-1" style="color:orange;"/><t t-raw="wh.address"/>
                         </div>
                         <div class="align-self-center">
                             <input name="gse_select_warehouse" type="radio"
