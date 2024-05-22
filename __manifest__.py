@@ -21,6 +21,7 @@
     'assets': {
         'web.assets_frontend': [
             'gse_website_sale_stock/static/src/js/variant_mixin.js',
+            'gse_website_sale_stock/static/src/xml/website_sale_stock_product_availability.xml',
         ],
     },
 }

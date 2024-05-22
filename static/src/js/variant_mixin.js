@@ -13,12 +13,6 @@ publicWidget.registry.WebsiteSale.include({
         'click .gse_change_company': '_onChangeCompanyClick',
         'click .gse_change_warehouse': '_onChangeWarehouseClick',
     }),
-    xmlDependencies: (publicWidget.registry.WebsiteSale.prototype.xmlDependencies || [])
-        .concat([
-            '/gse_website_sale_stock/static/src/xml/website_sale_stock_product_availability.xml',
-            '/website_sale_stock/static/src/xml/website_sale_stock_product_availability.xml', // Needed for inherit?
-        ]),
-
     _onChangeWarehouseClick(ev) {
         const gseWhQty = $(ev.target).data('gse-wh-qty');
         const dialog = new Dialog(this, {
